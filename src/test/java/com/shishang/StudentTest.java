@@ -33,6 +33,7 @@ public class StudentTest implements Serializable {
         bean.setFriendName(null);
         bean.setWeight(new BigDecimal(30));
         bean.setEmail("xiaogangfan163.com");
+        bean.setSpellName("XIAOGANGFAN");
         return bean;
     }
 

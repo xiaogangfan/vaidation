@@ -1,5 +1,8 @@
 package com.shishang;
 
+import com.defineconstrain.CaseMode;
+import com.defineconstrain.CheckCase;
+
 import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -24,12 +27,23 @@ public class Student implements Serializable {
         return friendName != null?true:false;
     }
 
-    @Future(message = "生日必须在当前实践之前")
+    @Future(message = "生日必须在当前时间之前")
     private Date birthday;
 
     @Pattern(regexp = "^(.+)@(.+)$",message = "邮箱的格式不合法")
     private String email;
 
+    @CheckCase(value = CaseMode.LOWER,message = "名字的拼音需要小写")
+    private String spellName;
+
+
+    public String getSpellName() {
+        return spellName;
+    }
+
+    public void setSpellName(String spellName) {
+        this.spellName = spellName;
+    }
 
     public String getName() {
         return name;
