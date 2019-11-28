@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shishang.StudentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-28T01:27:55" hostname="xiaogangfandeMacintosh.local" time="0.191">
+  <properties/>
+  <testcase name="testValidation" classname="com.shishang.StudentTest" time="0.191"/>
+  <system-out><![CDATA[名字的拼音需要小写
+生日必须在当前时间之前
+地址应该在6-30字符之间
+邮箱的格式不合法
+多吃点饭吧
+名字不能为空
+]]></system-out>
+  <system-err><![CDATA[十一月 28, 2019 9:27:55 上午 org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 5.2.4.Final
+]]></system-err>
+</testsuite>
