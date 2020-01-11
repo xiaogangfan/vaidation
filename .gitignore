@@ -37,3 +37,35 @@ tempDir/
 rebel.xml
 web/bin/
 web/velocity.log*
+target/
+*/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+### logs ###
+logs/
+*/logs/
+
+.DS_Store
+../.DS_Store
+../.DS_Store
